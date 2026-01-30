@@ -1,0 +1,144 @@
+.out {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 6.5vw;
+    font-weight:700;
+    word-wrap:break-word;
+    overflow-wrap:break-word;
+    background:
+    repeating-radial-gradient(
+      ellipse at top left,
+      rgba(255,255,255,0.08) 0px,
+      rgba(255,255,255,0.04) 20px,
+      rgba(0,0,0,0.06) 40px,
+      transparent 80px
+    ),
+    linear-gradient(to right, #25343F, #576A8F, #25343F);
+  }
+  #outputContainer {
+    max-width: 90%;
+  }
+  label {
+    color:Black;
+  }
+  .start {
+    height:100vh;
+    font-size:30px;
+    background:
+    repeating-radial-gradient(
+      ellipse at top left,
+      rgba(255,255,255,0.08) 0px,
+      rgba(255,255,255,0.04) 20px,
+      rgba(0,0,0,0.06) 40px,
+      transparent 80px
+    ),
+    linear-gradient(to right, #25343F, #576A8F, #25343F);
+  }
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:90px;
+}
+#email {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+#password {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.main {
+  font-size:20px;
+  height:100vh;
+  background:
+  repeating-radial-gradient(
+    ellipse at top left,
+    rgba(255,255,255,0.08) 0px,
+    rgba(255,255,255,0.04) 20px,
+    rgba(0,0,0,0.06) 40px,
+    transparent 80px
+  ),
+  linear-gradient(to right, #25343F, #576A8F, #25343F);
+}
+.head {
+  text-align:center;
+  color:white;
+  border: 10px solid white;
+  padding:2px;
+  width:900px;
+  margin-left:170px;
+}
+h2 {
+    color: white;
+    font-family:"Archivo Black", sans-serif;
+}
+#adminContainer {
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:20px;
+}
+#songsContainer {
+  border:1px hidden white;
+  height:650px;
+  padding:10px;
+  margin-right:50px;
+  box-shadow: -70px 70px 80px rgba(0, 0, 0, 0.85);
+}
+#announcementContainer {
+  border: 1px hidden white;
+  height:650px;
+  padding:15px;
+  box-shadow: -70px 70px 80px rgba(0, 0, 0, 0.85);
+}
+#bibleContainer {
+  border:1px hidden white;
+  height:650px;
+  padding:40px;
+ margin-left:50px;
+  box-shadow: -70px 70px 80px rgba(0, 0, 0, 0.85);
+}
+#fetchBibleBtn {
+  margin-top: 20px;
+}
+#songLyrics {
+     height: 100px;
+    width: 430px;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 13px;
+    margin-top:30px;
+}
+#songTitle {
+     padding:10px;
+     border-radius:7px;
+}
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color: #c3b6d9;
+}
+#announcementText {
+  padding:10px;
+     border-radius:7px;
+}
+#bibleQuery {
+  padding:10px;
+     border-radius:7px;
+}
+#searchSongTitle {
+  padding:10px;
+  border-radius:7px;
+  margin-top:10px;
+}

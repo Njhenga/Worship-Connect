@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="main">
+    <div id="adminContainer">
+        <div id="songsContainer">
+            <h2>Songs & Lyrics</h2>
+          
+            <!-- Input for the song title -->
+            <div id="songTitleInput">
+              <input type="text" id="songTitle" placeholder="Enter Song Title">
+            </div>
+          
+            <!-- Input for all lyrics (verses + chorus) -->
+            <div id="songLyricsInput">
+              <textarea id="songLyrics" placeholder="Type all verses and chorus here, separate by lines"></textarea>
+            </div>
+          
+            <!-- Save button -->
+            <div id="saveSongContainer">
+              <button id="saveSongBtn">Save Song</button>
+            </div>
+          
+            <!-- Search and load song by title -->
+            <div id="loadSongContainer">
+              <input type="text" id="searchSongTitle" placeholder="Search song by title">
+              <button id="loadSongBtn">Load Song</button>
+            </div>
+          
+            <!-- Display saved song lyrics -->
+            <div id="songDisplayContainer"></div>
+          </div>
+       
+        
+    <!-- Announcement Section -->
+<div id="announcementContainer">
+    <h2>Prepare Announcements</h2>
+    <textarea id="announcementText" placeholder="Type your announcement here..." rows="3"></textarea>
+    <button id="saveAnnouncementBtn">Save Announcement</button>
+   <!--<h3>Saved Announcements</h3>--> 
+   <h1><button id="show">show Announcements</button></h1>
+    <div id="savedAnnouncements"></div>
+</div>
+
+
+   <!--Bible Verses Section-->
+   <div id="bibleContainer">
+    <h2>Bible Verses</h2>
+  
+    <!-- Single input for book, chapter, verse/range -->
+    <div id="bibleInputs">
+      <input type="text" id="bibleQuery" placeholder="Enter verse or range (e.g., John 3:16 or Ephesians 4:1-6)">
+      <button id="fetchBibleBtn">Fetch Verses</button>
+    </div>
+  
+    <!-- Container where fetched verses will appear -->
+    <div id="bibleResults"></div>
+  </div>
+</div>
+
+
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
