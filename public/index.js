@@ -11,7 +11,7 @@ $(document).ready(function() {
 
        //showing the default
        const DEFAULT_MESSAGE = "Welcome To Today's Service";
-       $("outputContainer").html(`<p>${DEFAULT_MESSAGE}</p>`);
+       $("outputContainer").html(`<h1>${DEFAULT_MESSAGE}</h1>`);
        let resetTimeout; // store the timeout so we can clear it if needed
  
  function showDefaultMessage(delay = 120000) { // 120000ms = 2 min
@@ -118,7 +118,7 @@ $("#loadSongBtn").click(function () {
                           Send Live
                       </button>
                   </div>
-                  <hr>
+                  <hr> 
               `);
           });
       })

@@ -6,7 +6,8 @@
     align-items: center;
     height: 100vh;
     text-align: center;
-    font-size: 6.5vw;
+    font-size: clamp(32px, 6vw, 70px);
+    line-height:1.25;
     font-weight:700;
     word-wrap:break-word;
     overflow-wrap:break-word;
