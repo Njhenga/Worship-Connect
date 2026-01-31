@@ -23,6 +23,12 @@
   #outputContainer {
     max-width: 90%;
   }
+  #outputContainer h2 {
+    margin-bottom:5px;
+  }
+  #outputContainer p {
+    margin-top:0;
+  }
   label {
     color:Black;
   }
@@ -89,20 +95,20 @@ h2 {
 }
 #songsContainer {
   border:1px hidden white;
-  height:650px;
+  height:100vh;
   padding:10px;
   margin-right:50px;
   box-shadow: -70px 70px 80px rgba(0, 0, 0, 0.85);
 }
 #announcementContainer {
   border: 1px hidden white;
-  height:650px;
+  height:100vh;
   padding:15px;
   box-shadow: -70px 70px 80px rgba(0, 0, 0, 0.85);
 }
 #bibleContainer {
   border:1px hidden white;
-  height:650px;
+  height:100vh;
   padding:40px;
  margin-left:50px;
   box-shadow: -70px 70px 80px rgba(0, 0, 0, 0.85);
@@ -130,8 +136,9 @@ button {
     background-color: #c3b6d9;
 }
 #announcementText {
-  padding:10px;
-     border-radius:7px;
+    padding:10px;
+    border-radius:7px;
+    width:250px
 }
 #bibleQuery {
   padding:10px;

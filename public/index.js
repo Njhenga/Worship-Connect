@@ -1,4 +1,4 @@
-alert("hello")
+
 
 $(document).ready(function() {
     // -------------------------
@@ -10,7 +10,7 @@ $(document).ready(function() {
       const socket = io(); // connect to server
 
        //showing the default
-       const DEFAULT_MESSAGE = "Welcome To The Service";
+       const DEFAULT_MESSAGE = "Welcome To Today's Service";
        $("outputContainer").html(`<p>${DEFAULT_MESSAGE}</p>`);
        let resetTimeout; // store the timeout so we can clear it if needed
  
@@ -19,7 +19,7 @@ $(document).ready(function() {
    clearTimeout(resetTimeout);
  
    resetTimeout = setTimeout(() => {
-     $("#outputContainer").html(`<p>${DEFAULT_MESSAGE}</p>`);
+     $("#outputContainer").html(`<h2>${DEFAULT_MESSAGE}</h2>`);
    }, delay);
  }
 
@@ -118,6 +118,7 @@ $("#loadSongBtn").click(function () {
                           Send Live
                       </button>
                   </div>
+                  <hr>
               `);
           });
       })
@@ -193,6 +194,7 @@ $("#loadSongBtn").click(function () {
                    Send Live
                  </button>
                </div>
+               <hr>
              `);
            });
    
